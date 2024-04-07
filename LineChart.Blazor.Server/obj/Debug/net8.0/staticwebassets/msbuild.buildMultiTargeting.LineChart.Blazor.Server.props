@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\LineChart.Blazor.Server.props" />
+</Project>

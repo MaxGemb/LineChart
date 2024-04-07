@@ -1,0 +1,257 @@
+﻿@using LineChart.Blazor.Server.Controls
+@using LineChart.Module.BusinessObjects
+@using LineChart.Module.Data
+@using System.Drawing
+@using DevExpress.Blazor
+<DxLayoutBreakpoint DeviceSize="DeviceSize.Large" />
+
+<DxStackLayout>
+    <Items>
+        <DxStackLayoutItem Length="1fr">
+            <Template>
+                <div>
+                    <b>Период</b>
+                    <DxDateEdit Date="dateBegin"
+                                DateChanged="@((DateTime? newValue) => onDateBeginChanged(newValue))"
+                                ClearButtonDisplayMode="DataEditorClearButtonDisplayMode.Never"
+                                NullText="Choose date..."
+                                DisplayFormat="dd.MM.yyyy"
+                                Format="dd.MM.yyyy"
+                                TimeSectionVisible="false"
+                                MinDate="@(DateTime.MinValue)"
+                                MaxDate="@(new DateTime(2050, 12,31))" />
+                    <DxDateEdit Date="dateEnd"
+                                DateChanged="@((DateTime? newValue) => onDateEndChanged(newValue))"
+                                ClearButtonDisplayMode="DataEditorClearButtonDisplayMode.Never"
+                                NullText="Choose date..."
+                                DisplayFormat="dd.MM.yyyy"
+                                Format="dd.MM.yyyy"
+                                TimeSectionVisible="false"
+                                MinDate="@(DateTime.MinValue)"
+                                MaxDate="@(new DateTime(2050, 12,31))" />
+                    <b>Показатель</b>
+                    <DxComboBox Data="@ComponentModel.IndicatorSource"
+                                TextFieldName="@nameof(ChartIndicator.indicator)"
+                                @bind-Value="@indicator"
+                                AllowUserInput="true">
+                    </DxComboBox>
+                    <b>Измерение</b>
+                    <DxComboBox Data="@ComponentModel.MeasurementSource"
+                                TextFieldName="@nameof(ChartMeasurement.measurement)"
+                                @bind-Value="@measurement"
+                                AllowUserInput="true">
+                    </DxComboBox>
+                    <b>Счета</b>
+                    <DxComboBox Data="@ComponentModel.ScoresSource"
+                                TextFieldName="@nameof(ChartScores.score)"
+                                @bind-Value="@scores"
+                                AllowUserInput="true">
+                    </DxComboBox>
+                    <b>Клиент</b>
+                    <DxComboBox Data="@ComponentModel.ClientsSource"
+                                TextFieldName="@nameof(ChartClients.client)"
+                                @bind-Value="@clients"
+                                AllowUserInput="true"
+                                SelectedItemChanged="@((ChartClients newValue) => onClientChanged(newValue))">
+                    </DxComboBox>
+                    <b>Стратег</b>
+                    <DxComboBox Data="@ComponentModel.StrategistSource"
+                                TextFieldName="@nameof(ChartStrategist.strategist)"
+                                @bind-Value="@strategist"
+                                AllowUserInput="true">
+                    </DxComboBox>
+                    <b>Индексы</b>
+                    <DxComboBox Data="@ComponentModel.IndexesSource"
+                                TextFieldName="@nameof(ChartIndexes.index)"
+                                @bind-Value="@indexes"
+                                AllowUserInput="true">
+                    </DxComboBox>
+                    <b>Валюта</b>
+                    <DxComboBox Data="@ComponentModel.CurrencySource"
+                                TextFieldName="@nameof(ChartCurrency.currency)"
+                                @bind-Value="@Currency"
+                                AllowUserInput="true">
+                    </DxComboBox>
+                    <DxButton IconCssClass="Action_Printing_Preview">
+                        Распечатать
+                    </DxButton>
+
+                    <DxCheckBox T="bool" @bind-Checked="@isNeedShowLegend">Показать значения</DxCheckBox>
+                </div>
+            </Template>
+        </DxStackLayoutItem>
+        <DxStackLayoutItem Length="9fr">
+            <Template>
+                <div>
+                    <DxChart T="ChartData"
+                             Data="@ChartData()"
+                             Width="100%"
+                             Height="1080px"
+                             PointSelectionMode=ChartSelectionMode.Single
+                             SeriesSelectionMode=ChartSelectionMode.Single>
+                        @foreach (var fragment in fragmentLines)
+                        {
+                            @fragment
+
+                        }/>
+                        <DxChartLegend Position="RelativePosition.Inside"
+                                       Orientation="Orientation.Vertical"
+                                       HorizontalAlignment="HorizontalAlignment.Right">
+                        </DxChartLegend>
+                    </DxChart>
+                </div>
+            </Template>
+        </DxStackLayoutItem>
+    </Items>
+</DxStackLayout>
+
+
+@code {
+    [Parameter] public ChartComponentModel ComponentModel { get; set; }
+    [Parameter] public IEnumerable<ChartData> chartDatas { get; set; }
+    [Parameter] public List<string> linesNames { get; set; }
+    [Parameter] public DateTime? dateBegin { get; set; }
+    [Parameter] public DateTime? dateEnd { get; set; }
+    [Parameter] public bool isNeedShowLegend { get; set; }
+    [Parameter] public ChartIndicator indicator { get; set; }
+    [Parameter] public ChartMeasurement measurement { get; set; }
+    [Parameter] public ChartScores scores { get; set; }
+    [Parameter] public ChartClients clients { get; set; }
+    [Parameter] public ChartStrategist strategist { get; set; }
+    [Parameter] public ChartIndexes indexes { get; set; }
+    [Parameter] public ChartCurrency Currency { get; set; }
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        if (ComponentModel.ShowLegendSource.ToList().Count > 0)
+        {
+            isNeedShowLegend = ComponentModel.ShowLegendSource.FirstOrDefault().IsNeedValues;
+        }
+        else
+        {
+            isNeedShowLegend = false;
+        }
+        try
+        {
+            if (ComponentModel.IndicatorSource.ToList().Count > 0)
+            {
+                indicator = ComponentModel.IndicatorSource.FirstOrDefault();
+            }
+            if (ComponentModel.MeasurementSource.ToList().Count > 0)
+            {
+                measurement = ComponentModel.MeasurementSource.FirstOrDefault();
+            }
+            if (ComponentModel.ScoresSource.ToList().Count > 0)
+            {
+                scores = ComponentModel.ScoresSource.FirstOrDefault();
+            }
+            if (ComponentModel.ClientsSource.ToList().Count > 0)
+            {
+                clients = ComponentModel.ClientsSource.FirstOrDefault();
+            }
+            if (ComponentModel.StrategistSource.ToList().Count > 0)
+            {
+                strategist = ComponentModel.StrategistSource.FirstOrDefault();
+            }
+            if (ComponentModel.IndexesSource.ToList().Count > 0)
+            {
+                indexes = ComponentModel.IndexesSource.FirstOrDefault();
+            }
+            if (ComponentModel.CurrencySource.ToList().Count > 0)
+            {
+                Currency = ComponentModel.CurrencySource.FirstOrDefault();
+            }
+        }
+        catch (Exception ex)
+        {
+            throw (ex);
+        }
+
+        if (ComponentModel.DatesSource.ToList().Count > 0)
+        {
+            dateBegin = GetDates().dateBegin;
+            dateEnd = GetDates().dateEnd;
+        }
+        else
+        {
+            dateBegin = DateTime.MinValue;
+            dateEnd = DateTime.Now;
+        }
+        chartDatas = ChartData();
+
+        @foreach (var item in GetNames(clients.client))
+        {
+            fragmentLines.Add(RenderLines(item));
+        }
+    }
+
+    private List<RenderFragment> fragmentLines = new List<RenderFragment>();
+
+    public static RenderFragment Create(ChartComponentModel componentModel) => @<ChartComponent ComponentModel="@componentModel" />;
+
+    void onDateBeginChanged(DateTime? newValue)
+    {
+        dateBegin = newValue;
+    }
+    void onClientChanged(ChartClients newValue)
+    {
+        clients = newValue;
+    }
+
+    void onDateEndChanged(DateTime? newValue)
+    {
+        dateEnd = newValue;
+    }
+
+    private RenderFragment RenderLines(string name)
+    {
+        return @<DxChartLineSeries Name="@name"
+                                       T="ChartData"
+                                       TArgument="DateTime"
+                                       TValue="double"
+                                       ArgumentField="@(ch => ch.date)"
+                                       ValueField="@(ch => ch.total)"
+                                       SummaryMethod="Enumerable.Sum"
+                                       Filter="@(ch => ch.name == name)">
+        <DxChartSeriesPoint Visible="@isNeedShowLegend" HoverMode=ChartSeriesPointHoverMode.None
+                            SelectionMode=ChartSeriesPointSelectionMode.Point />
+        <DxChartSeriesLabel Visible="@isNeedShowLegend">
+            <DxChartSeriesLabelConnector Visible="@isNeedShowLegend" Width="0" />
+        </DxChartSeriesLabel>
+    </DxChartLineSeries>
+    ;
+    }
+
+    private List<string> GetNames(string client = "(все)")
+    {
+        if (client == "(все)")
+        {
+            return ComponentModel.DataSource.Select(x => x.name).Distinct().ToList();
+        }
+        else
+        {
+            return ComponentModel.DataSource.Where(x => x.name == client).Select(x => x.name).ToList();
+        }
+    }
+
+    private IEnumerable<ChartData> ChartData()
+    {
+        if (clients.id == 0)
+        {
+            chartDatas = ComponentModel.DataSource.Where(x => x.date >= dateBegin && x.date <= dateEnd).OrderBy(x => x.date);
+        }
+        else
+        {
+            chartDatas = ComponentModel.DataSource.Where(x => x.date >= dateBegin && x.date <= dateEnd && x.name == clients.client).OrderBy(x => x.date);
+        }
+        return chartDatas;
+    }
+
+    public ChartDates GetDates()
+    {
+        return ComponentModel.DatesSource.FirstOrDefault();
+    }
+}
+
+

@@ -1,0 +1,265 @@
+{
+  "version": 2,
+  "dgSpecHash": "Bgjzb8OqzaW8+topC9v5ztyGPzEFqGpwwt7bKb/+y6g4bqE/y+a2xN0v0Avj4qCSD+kfUwFRBPNhRvAwplKbPw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Maxim\\source\\repos\\LineChartReady\\LineChart.Blazor.Server\\LineChart.Blazor.Server.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.aspnetcore.common\\23.2.5\\devexpress.aspnetcore.common.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.aspnetcore.core\\23.2.5\\devexpress.aspnetcore.core.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.aspnetcore.dashboard\\23.2.5\\devexpress.aspnetcore.dashboard.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.blazor\\23.2.5\\devexpress.blazor.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.blazor.dashboard\\23.2.5\\devexpress.blazor.dashboard.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.blazor.themes\\23.2.5\\devexpress.blazor.themes.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.charts\\23.2.5\\devexpress.charts.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.charts.core\\23.2.5\\devexpress.charts.core.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.codeparser\\23.2.5\\devexpress.codeparser.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.dashboard.core\\23.2.5\\devexpress.dashboard.core.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.data\\23.2.5\\devexpress.data.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.dataaccess\\23.2.5\\devexpress.dataaccess.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.datavisualization.core\\23.2.5\\devexpress.datavisualization.core.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.drawing\\23.2.5\\devexpress.drawing.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.drawing.skia\\23.2.5\\devexpress.drawing.skia.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.expressapp\\23.2.5\\devexpress.expressapp.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.expressapp.aspnetcore\\23.2.5\\devexpress.expressapp.aspnetcore.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.expressapp.blazor\\23.2.5\\devexpress.expressapp.blazor.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.expressapp.codeanalysis\\23.2.5\\devexpress.expressapp.codeanalysis.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.expressapp.conditionalappearance\\23.2.5\\devexpress.expressapp.conditionalappearance.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.expressapp.dashboards\\23.2.5\\devexpress.expressapp.dashboards.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.expressapp.dashboards.blazor\\23.2.5\\devexpress.expressapp.dashboards.blazor.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.expressapp.objects\\23.2.5\\devexpress.expressapp.objects.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.expressapp.security\\23.2.5\\devexpress.expressapp.security.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.expressapp.security.aspnetcore\\23.2.5\\devexpress.expressapp.security.aspnetcore.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.expressapp.validation\\23.2.5\\devexpress.expressapp.validation.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.expressapp.validation.blazor\\23.2.5\\devexpress.expressapp.validation.blazor.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.expressapp.xpo\\23.2.5\\devexpress.expressapp.xpo.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.gauges.core\\23.2.5\\devexpress.gauges.core.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.images\\23.2.5\\devexpress.images.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.map.core\\23.2.5\\devexpress.map.core.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.office.core\\23.2.5\\devexpress.office.core.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.pdf.core\\23.2.5\\devexpress.pdf.core.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.pdf.drawing\\23.2.5\\devexpress.pdf.drawing.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.persistent.base\\23.2.5\\devexpress.persistent.base.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.persistent.baseimpl.xpo\\23.2.5\\devexpress.persistent.baseimpl.xpo.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.pivotgrid.core\\23.2.5\\devexpress.pivotgrid.core.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.printing.core\\23.2.5\\devexpress.printing.core.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.reporting.core\\23.2.5\\devexpress.reporting.core.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.richedit.core\\23.2.5\\devexpress.richedit.core.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.richedit.export\\23.2.5\\devexpress.richedit.export.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.scheduler.core\\23.2.5\\devexpress.scheduler.core.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.sparkline.core\\23.2.5\\devexpress.sparkline.core.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.treemap\\23.2.5\\devexpress.treemap.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.treemap.core\\23.2.5\\devexpress.treemap.core.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.web.dashboard.common\\23.2.5\\devexpress.web.dashboard.common.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.web.resources\\23.2.5\\devexpress.web.resources.23.2.5.nupkg.sha512",
+    "C:\\Program Files\\DevExpress 23.2\\Components\\Offline Packages\\devexpress.xpo\\23.2.5\\devexpress.xpo.23.2.5.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\devextreme.aspnet.data\\3.0.0\\devextreme.aspnet.data.3.0.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\harfbuzzsharp\\7.3.0.1\\harfbuzzsharp.7.3.0.1.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\harfbuzzsharp.nativeassets.linux\\2.8.2.5\\harfbuzzsharp.nativeassets.linux.2.8.2.5.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\harfbuzzsharp.nativeassets.macos\\7.3.0.1\\harfbuzzsharp.nativeassets.macos.7.3.0.1.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\harfbuzzsharp.nativeassets.win32\\7.3.0.1\\harfbuzzsharp.nativeassets.win32.7.3.0.1.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.0\\microsoft.aspnetcore.cryptography.internal.6.0.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\microsoft.aspnetcore.dataprotection\\6.0.0\\microsoft.aspnetcore.dataprotection.6.0.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\microsoft.aspnetcore.dataprotection.abstractions\\6.0.0\\microsoft.aspnetcore.dataprotection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\microsoft.aspnetcore.dataprotection.extensions\\6.0.0\\microsoft.aspnetcore.dataprotection.extensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\2.9.4\\microsoft.codeanalysis.analyzers.2.9.4.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\microsoft.codeanalysis.common\\3.3.1\\microsoft.codeanalysis.common.3.3.1.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\microsoft.codeanalysis.csharp\\3.3.1\\microsoft.codeanalysis.csharp.3.3.1.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\microsoft.extensions.dependencyinjection.6.0.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\microsoft.extensions.dependencymodel\\6.0.0\\microsoft.extensions.dependencymodel.6.0.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\6.0.0\\microsoft.extensions.fileproviders.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\6.0.0\\microsoft.extensions.hosting.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.4\\microsoft.extensions.logging.abstractions.6.0.4.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\microsoft.extensions.objectpool\\5.0.10\\microsoft.extensions.objectpool.5.0.10.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.34.0\\microsoft.identitymodel.abstractions.6.34.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.34.0\\microsoft.identitymodel.jsonwebtokens.6.34.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\microsoft.identitymodel.logging\\6.34.0\\microsoft.identitymodel.logging.6.34.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.34.0\\microsoft.identitymodel.tokens.6.34.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\runtime.native.system.data.sqlclient.sni\\4.7.0\\runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\skiasharp\\2.88.7\\skiasharp.2.88.7.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\skiasharp.harfbuzz\\2.88.7\\skiasharp.harfbuzz.2.88.7.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\skiasharp.nativeassets.linux\\2.88.7\\skiasharp.nativeassets.linux.2.88.7.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\skiasharp.nativeassets.macos\\2.88.7\\skiasharp.nativeassets.macos.2.88.7.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\skiasharp.nativeassets.win32\\2.88.7\\skiasharp.nativeassets.win32.2.88.7.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.collections.immutable\\1.5.0\\system.collections.immutable.1.5.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.1\\system.configuration.configurationmanager.6.0.1.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.data.sqlclient\\4.8.6\\system.data.sqlclient.4.8.6.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.formats.asn1\\6.0.0\\system.formats.asn1.6.0.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.34.0\\system.identitymodel.tokens.jwt.6.34.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.private.servicemodel\\4.10.2\\system.private.servicemodel.4.10.2.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.reactive\\5.0.0\\system.reactive.5.0.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.reflection.dispatchproxy\\4.7.1\\system.reflection.dispatchproxy.4.7.1.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.resources.extensions\\6.0.0\\system.resources.extensions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.security.cryptography.pkcs\\6.0.3\\system.security.cryptography.pkcs.6.0.3.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.0\\system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.security.cryptography.xml\\6.0.1\\system.security.cryptography.xml.6.0.1.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.security.permissions\\6.0.0\\system.security.permissions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.servicemodel.http\\4.10.2\\system.servicemodel.http.4.10.2.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.servicemodel.nettcp\\4.4.4\\system.servicemodel.nettcp.4.4.4.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.servicemodel.primitives\\4.10.2\\system.servicemodel.primitives.4.10.2.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.servicemodel.security\\4.4.4\\system.servicemodel.security.4.4.4.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.3\\system.threading.tasks.extensions.4.5.3.nupkg.sha512",
+    "C:\\Users\\Maxim\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "LineChart.Blazor.Server зависит от DevExpress.Drawing.Skia (>= 23.2.0), но DevExpress.Drawing.Skia 23.2.0 не найден. Использовано наилучшее приближенное соответствие DevExpress.Drawing.Skia 23.2.5.",
+      "libraryId": "DevExpress.Drawing.Skia",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "LineChart.Module зависит от DevExpress.ExpressApp (>= 23.2.0), но DevExpress.ExpressApp 23.2.0 не найден. Использовано наилучшее приближенное соответствие DevExpress.ExpressApp 23.2.5.",
+      "libraryId": "DevExpress.ExpressApp",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "LineChart.Blazor.Server зависит от DevExpress.ExpressApp.Blazor (>= 23.2.0), но DevExpress.ExpressApp.Blazor 23.2.0 не найден. Использовано наилучшее приближенное соответствие DevExpress.ExpressApp.Blazor 23.2.5.",
+      "libraryId": "DevExpress.ExpressApp.Blazor",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "LineChart.Blazor.Server зависит от DevExpress.ExpressApp.CodeAnalysis (>= 23.2.0), но DevExpress.ExpressApp.CodeAnalysis 23.2.0 не найден. Использовано наилучшее приближенное соответствие DevExpress.ExpressApp.CodeAnalysis 23.2.5.",
+      "libraryId": "DevExpress.ExpressApp.CodeAnalysis",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "LineChart.Module зависит от DevExpress.ExpressApp.ConditionalAppearance (>= 23.2.0), но DevExpress.ExpressApp.ConditionalAppearance 23.2.0 не найден. Использовано наилучшее приближенное соответствие DevExpress.ExpressApp.ConditionalAppearance 23.2.5.",
+      "libraryId": "DevExpress.ExpressApp.ConditionalAppearance",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "LineChart.Module зависит от DevExpress.ExpressApp.Dashboards (>= 23.2.0), но DevExpress.ExpressApp.Dashboards 23.2.0 не найден. Использовано наилучшее приближенное соответствие DevExpress.ExpressApp.Dashboards 23.2.5.",
+      "libraryId": "DevExpress.ExpressApp.Dashboards",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "LineChart.Blazor.Server зависит от DevExpress.ExpressApp.Dashboards.Blazor (>= 23.2.0), но DevExpress.ExpressApp.Dashboards.Blazor 23.2.0 не найден. Использовано наилучшее приближенное соответствие DevExpress.ExpressApp.Dashboards.Blazor 23.2.5.",
+      "libraryId": "DevExpress.ExpressApp.Dashboards.Blazor",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "LineChart.Module зависит от DevExpress.ExpressApp.Objects (>= 23.2.0), но DevExpress.ExpressApp.Objects 23.2.0 не найден. Использовано наилучшее приближенное соответствие DevExpress.ExpressApp.Objects 23.2.5.",
+      "libraryId": "DevExpress.ExpressApp.Objects",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "LineChart.Module зависит от DevExpress.ExpressApp.Validation (>= 23.2.0), но DevExpress.ExpressApp.Validation 23.2.0 не найден. Использовано наилучшее приближенное соответствие DevExpress.ExpressApp.Validation 23.2.5.",
+      "libraryId": "DevExpress.ExpressApp.Validation",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "LineChart.Blazor.Server зависит от DevExpress.ExpressApp.Validation.Blazor (>= 23.2.0), но DevExpress.ExpressApp.Validation.Blazor 23.2.0 не найден. Использовано наилучшее приближенное соответствие DevExpress.ExpressApp.Validation.Blazor 23.2.5.",
+      "libraryId": "DevExpress.ExpressApp.Validation.Blazor",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "LineChart.Module зависит от DevExpress.ExpressApp.Xpo (>= 23.2.0), но DevExpress.ExpressApp.Xpo 23.2.0 не найден. Использовано наилучшее приближенное соответствие DevExpress.ExpressApp.Xpo 23.2.5.",
+      "libraryId": "DevExpress.ExpressApp.Xpo",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "LineChart.Module зависит от DevExpress.Persistent.Base (>= 23.2.0), но DevExpress.Persistent.Base 23.2.0 не найден. Использовано наилучшее приближенное соответствие DevExpress.Persistent.Base 23.2.5.",
+      "libraryId": "DevExpress.Persistent.Base",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "LineChart.Module зависит от DevExpress.Persistent.BaseImpl.Xpo (>= 23.2.0), но DevExpress.Persistent.BaseImpl.Xpo 23.2.0 не найден. Использовано наилучшее приближенное соответствие DevExpress.Persistent.BaseImpl.Xpo 23.2.5.",
+      "libraryId": "DevExpress.Persistent.BaseImpl.Xpo",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}

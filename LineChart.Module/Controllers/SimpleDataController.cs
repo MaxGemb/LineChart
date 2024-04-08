@@ -16,7 +16,7 @@ namespace LineChart.Module.Controllers
         public SimpleAction importInMainView { get; }
         public SimpleDataController()
         {
-            importInMainView = new SimpleAction(this, "CreateBaseBataInAllCatalogs", PredefinedCategory.RecordEdit);
+            importInMainView = new SimpleAction(this, "Загрузить базовые данные", PredefinedCategory.RecordEdit);
             importInMainView.TargetViewNesting = Nesting.Root;
             importInMainView.Execute += ImportInMainView_Execute;
             InitializeComponent();
@@ -25,7 +25,7 @@ namespace LineChart.Module.Controllers
         protected override void OnActivated()
         {
             base.OnActivated();
-            ListView listView = this.View;
+            listView = this.View;
             // Perform various tasks depending on the target View.
         }
         protected override void OnViewControlsCreated()
@@ -58,12 +58,69 @@ namespace LineChart.Module.Controllers
                 using (IObjectSpace nestedImportObjectSpace = importObjectSpace.CreateNestedObjectSpace())
                 {
                     IObjectSpace objectSpace = View.ObjectSpace;
-                    var datas = objectSpace.GetObjects(typeof(ChartDates));
+
+                    var datas = objectSpace.GetObjects(typeof(ChartData));
+                    if (datas.Count == 0)
+                    {
+                        XmlDocument doc = new XmlDocument();
+                        doc.LoadXml(XmlContainer.GetXmlString());
+                        foreach (XmlNode element in doc.ChildNodes[0].ChildNodes)
+                        {
+                            ChartData data = nestedImportObjectSpace.CreateObject<ChartData>();
+                            data.name = String.Format("{0}", element.ChildNodes[0].InnerText);
+                            try
+                            {
+                                data.date = DateTime.Parse(element.ChildNodes[1].InnerText.ToString());
+
+                            }
+                            catch (FormatException)
+                            {
+                                Tracing.Tracer.LogText($"значение не конвертируется в DateTime: {element.ChildNodes[1].InnerText}");
+                            }
+                            try
+                            {
+                                data.total = Convert.ToDouble(element.ChildNodes[2].InnerText.ToString());
+                            }
+                            catch (FormatException)
+                            {
+                                Tracing.Tracer.LogText($"значение не конвертируется в double: {element.ChildNodes[2].InnerText}");
+                            }
+                        };
+
+                    }
+                    nestedImportObjectSpace.CommitChanges();
+                }
+                importObjectSpace.CommitChanges();
+
+                using (IObjectSpace nestedImportObjectSpace = importObjectSpace.CreateNestedObjectSpace())
+                {
+                    IObjectSpace objectSpace = View.ObjectSpace;
+                    var newDatas = new List<ChartData>();
+                    var chartDatas = objectSpace.GetObjects(typeof(ChartData));
+                    foreach (ChartData data in chartDatas)
+                    { newDatas.Add(data); }
+                    var datas = objectSpace.GetObjects(typeof(ChartClients));
+                    if (datas.Count == 0)
+                    {
+                        var names = new List<string>();
+                        names = newDatas.OrderBy(x => x.name).Select(x => x.name).Distinct().ToList();
+                        ChartClients catalog = nestedImportObjectSpace.CreateObject<ChartClients>();
+                        int i = 1;
+                        catalog.id = 0;
+                        catalog.client = "(все)";
+                        foreach (var name in names)
+                        {
+                            catalog = nestedImportObjectSpace.CreateObject<ChartClients>();
+                            catalog.id = i++;
+                            catalog.client = name;
+                        }
+                    }
+                    datas = objectSpace.GetObjects(typeof(ChartDates));
                     if (datas.Count == 0)
                     {
                         ChartDates catalog = nestedImportObjectSpace.CreateObject<ChartDates>();
-                        catalog.dateBegin = new DateTime(DateTime.Now.Year - 1, 1, 1);
-                        catalog.dateEnd = new DateTime(DateTime.Now.Year, 12, 31);
+                        catalog.dateBegin = newDatas.Min(x=> x.date);
+                        catalog.dateEnd = newDatas.Max(x => x.date);
                     }
                     datas = objectSpace.GetObjects(typeof(ChartIndicator));
                     if (datas.Count == 0)
@@ -85,13 +142,6 @@ namespace LineChart.Module.Controllers
                         ChartScores catalog = nestedImportObjectSpace.CreateObject<ChartScores>();
                         catalog.id = 0;
                         catalog.score = "(все)";
-                    }
-                    datas = objectSpace.GetObjects(typeof(ChartClients));
-                    if (datas.Count == 0)
-                    {
-                        ChartClients catalog = nestedImportObjectSpace.CreateObject<ChartClients>();
-                        catalog.id = 0;
-                        catalog.client = "(все)";
                     }
                     datas = objectSpace.GetObjects(typeof(ChartStrategist));
                     if (datas.Count == 0)

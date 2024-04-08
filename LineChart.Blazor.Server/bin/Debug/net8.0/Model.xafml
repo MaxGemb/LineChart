@@ -4,14 +4,16 @@
     <Items>
       <Item Id="Catalogs" ImageName="MultipleDocuments" Caption="Каталоги" IsNewNode="True">
         <Items IsNewNode="True">
-          <Item Id="ChartCurrency_ListView" ViewId="ChartCurrency_ListView" ObjectKey="" ImageName="BO_List" Caption="Currency" IsNewNode="True" />
+          <Item Id="ChartCurrency_ListView" ViewId="ChartCurrency_ListView" ObjectKey="" ImageName="BO_List" Caption="Валюта" IsNewNode="True" />
+          <Item Id="ChartData_ListView" ViewId="ChartData_ListView" ImageName="BO_List" ObjectKey="" Caption="Данные диаграммы" IsNewNode="True" />
           <Item Id="ChartDates_ListView" ViewId="ChartDates_ListView" ObjectKey="" ImageName="BO_List" Caption="Даты" IsNewNode="True" />
           <Item Id="ChartIndexes_ListView" ViewId="ChartIndexes_ListView" ObjectKey="" ImageName="BO_List" Caption="Индексы" IsNewNode="True" />
           <Item Id="ChartIndicator_ListView" ViewId="ChartIndicator_ListView" ObjectKey="" ImageName="BO_List" Caption="Показатели" IsNewNode="True" />
           <Item Id="ChartMeasurement_ListView" ViewId="ChartMeasurement_ListView" ObjectKey="" ImageName="BO_List" Caption="Измерения" IsNewNode="True" />
           <Item Id="ChartScores_ListView" ViewId="ChartScores_ListView" ObjectKey="" ImageName="BO_List" Caption="Счета" IsNewNode="True" />
           <Item Id="ChartShowLegend_ListView" ViewId="ChartShowLegend_ListView" ObjectKey="" ImageName="BO_List" Caption="Показывать легенду" IsNewNode="True" />
-          <Item Id="ChartStrategist_ListView" ViewId="ChartStrategist_ListView" ObjectKey="" ImageName="BO_List" Caption="Strategist" IsNewNode="True" />
+          <Item Id="ChartStrategist_ListView" ViewId="ChartStrategist_ListView" ObjectKey="" ImageName="BO_List" Caption="Стратеги" IsNewNode="True" />
+          <Item Id="Clients_ListView" ImageName="BO_List" ViewId="ChartClients_ListView" Caption="Клиенты" IsNewNode="True" />
         </Items>
       </Item>
       <Item Id="Charts" ImageName="ChartType_LineStacked" Caption="Графики" IsNewNode="True">
@@ -31,12 +33,6 @@
           <Item Id="ChartScores_ListView" Removed="True" />
           <Item Id="ChartShowLegend_ListView" Removed="True" />
           <Item Id="ChartStrategist_ListView" Removed="True" />
-        </Items>
-      </Item>
-      <Item Id="Import" ImageName="Action_LocalizationImport" Caption="Импорт" IsNewNode="True">
-        <Items IsNewNode="True">
-          <Item Id="ChartData_ListView" ViewId="ChartData_ListView" ImageName="Action_ModelDifferences_Import" ObjectKey="" Caption="Данные диаграммы" IsNewNode="True" />
-          <Item Id="Clients_ListView" ImageName="Action_ModelDifferences_Import" ViewId="ChartClients_ListView" Caption="Clients" IsNewNode="True" />
         </Items>
       </Item>
       <Item Id="Reports" Removed="True" />

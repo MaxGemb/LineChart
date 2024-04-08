@@ -1,12 +1,82 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Maxim\\source\\repos\\LineChartReady\\LineChart\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2D618E2D-7BA7-4E86-A6A5-F0C37C2B3AE1}|..\\LineChart.Module\\LineChart.Module.csproj|c:\\users\\maxim\\source\\repos\\linechartready\\linechart.module\\controllers\\simpledatacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4897F2E7-CA8F-4721-8871-6D4FB37AD415}|..\\LineChart.Blazor.Server\\LineChart.Blazor.Server.csproj|c:\\users\\maxim\\source\\repos\\linechartready\\linechart.blazor.server\\controls\\chartcontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4897F2E7-CA8F-4721-8871-6D4FB37AD415}|..\\LineChart.Blazor.Server\\LineChart.Blazor.Server.csproj|c:\\users\\maxim\\source\\repos\\linechartready\\linechart.blazor.server\\pages\\chartcomponent.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4897F2E7-CA8F-4721-8871-6D4FB37AD415}|..\\LineChart.Blazor.Server\\LineChart.Blazor.Server.csproj|c:\\users\\maxim\\source\\repos\\linechartready\\linechart.blazor.server\\model.xafml||{4DD02038-D78C-4AD3-8B8D-13FC109B2DCD}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SimpleDataController.cs",
+              "DocumentMoniker": "C:\\Users\\Maxim\\source\\repos\\LineChartReady\\LineChart.Module\\Controllers\\SimpleDataController.cs",
+              "RelativeDocumentMoniker": "..\\LineChart.Module\\Controllers\\SimpleDataController.cs",
+              "ToolTip": "C:\\Users\\Maxim\\source\\repos\\LineChartReady\\LineChart.Module\\Controllers\\SimpleDataController.cs*",
+              "RelativeToolTip": "..\\LineChart.Module\\Controllers\\SimpleDataController.cs*",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAAwHoAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T05:46:23.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChartControl.cs",
+              "DocumentMoniker": "C:\\Users\\Maxim\\source\\repos\\LineChartReady\\LineChart.Blazor.Server\\Controls\\ChartControl.cs",
+              "RelativeDocumentMoniker": "..\\LineChart.Blazor.Server\\Controls\\ChartControl.cs",
+              "ToolTip": "C:\\Users\\Maxim\\source\\repos\\LineChartReady\\LineChart.Blazor.Server\\Controls\\ChartControl.cs",
+              "RelativeToolTip": "..\\LineChart.Blazor.Server\\Controls\\ChartControl.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAcwEYAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T05:09:31.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ChartComponent.razor",
+              "DocumentMoniker": "C:\\Users\\Maxim\\source\\repos\\LineChartReady\\LineChart.Blazor.Server\\Pages\\ChartComponent.razor",
+              "RelativeDocumentMoniker": "..\\LineChart.Blazor.Server\\Pages\\ChartComponent.razor",
+              "ToolTip": "C:\\Users\\Maxim\\source\\repos\\LineChartReady\\LineChart.Blazor.Server\\Pages\\ChartComponent.razor",
+              "RelativeToolTip": "..\\LineChart.Blazor.Server\\Pages\\ChartComponent.razor",
+              "ViewState": "AQIAAH8AAAAAAAAAAAAAALIAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-08T04:53:13.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Model.xafml",
+              "DocumentMoniker": "C:\\Users\\Maxim\\source\\repos\\LineChartReady\\LineChart.Blazor.Server\\Model.xafml",
+              "RelativeDocumentMoniker": "..\\LineChart.Blazor.Server\\Model.xafml",
+              "ToolTip": "C:\\Users\\Maxim\\source\\repos\\LineChartReady\\LineChart.Blazor.Server\\Model.xafml",
+              "RelativeToolTip": "..\\LineChart.Blazor.Server\\Model.xafml",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALTSURBVDhPpZNbSFRRFIb/fS6eOaM52jgy1lhqmdpINyIogih7qB566KGCxMaXQrAeeqoIKhGCgkCQoh6KwoKaqMxCNIioTBCyi6Y1FU05jtNlbI7j3M5tt0eHwOqpPticzd5r/XutxX/wX1BKM7t/h2S\u002BM6B0RzHik9ughT0gYgiS4wwkvosQr5oJ\u002BcUMAXpxb4mxXtlKXL4DnKbOh84q5NkFxyMeyHl4n3Me/VFqvKon7ZHpDCZAWzZJyMqtQVypx2R0rW5L2M0VSVFcIoDMIkh9A4YGVDzTVYSXWie4HOljnlBwRSQWb73c7if09IbHiEXXwtCZHAeYbMGEVjCOH9UC7o/H4V8ugBbL4DUDVKNIT06WrQHZnN1KAo2LaZEzG5yQrtWEHlUwPGbiibwOI2vqEJk9iFnl55DnGIMo57JHRPACRWgwhQFvvJ/07qo07VaOOAstCCopPDLdeOneg4nSmnSL4A22zE\u002BQbedhX9gBSU7C16Vi6G4CZop/QPo81TFeT1nVRAw3XB6EtjRBtvAgiamCpkh3li47EW6DHjsIX2cKECkKC5xXOSJZA4auQ\u002BA5xFUNYd8wzHEFosiGL7A4K9PRo3jffRVv73UjFeXBZQGGqWKuY947zlZWsYfLznsDU4MtGUZyPIixwV4oo37Wq8kEn6P/UhM\u002B99xhM5iEoWnQVQNlrsq2Mlf52SkfDJ/YXWL4X5y5FS3d/KCyARJT5wQJekLBSF8HqK6BmlY43CHkz3k\u002BkRNZdFxf5Wjxbvcav4w0dqo2\u002B7ZaVXtdXXaWpwaxWKyIjLxmFfSB8AIzpobV6wo7F1QFDzXXXX\u002BZSfvTynWtT/d\u002B//7tpMFJuYmvH/BlqIedEjjy829t2rhy35EGz\u002Bh05DRp18zgcuOac\u002B5ix1Y5ixtKplQQAs1dseBwUbV95\u002B/Jaf76M6XZf6G3PPjB18wrH29eaz12LXP8G8BPoRwphdwLay4AAAAASUVORK5CYII=",
+              "WhenOpened": "2024-04-08T04:48:00.647Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

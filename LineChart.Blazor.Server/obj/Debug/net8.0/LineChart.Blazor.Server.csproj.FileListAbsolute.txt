@@ -348,3 +348,4 @@ C:\Users\Maxim\source\repos\LineChartReady\LineChart.Blazor.Server\obj\Debug\net
 C:\Users\Maxim\source\repos\LineChartReady\LineChart.Blazor.Server\obj\Debug\net8.0\LineChart.Blazor.Server.pdb
 C:\Users\Maxim\source\repos\LineChartReady\LineChart.Blazor.Server\obj\Debug\net8.0\LineChart.Blazor.Server.genruntimeconfig.cache
 C:\Users\Maxim\source\repos\LineChartReady\LineChart.Blazor.Server\obj\Debug\net8.0\ref\LineChart.Blazor.Server.dll
+C:\Users\Maxim\source\repos\LineChartReady\LineChart.Blazor.Server\obj\Debug\net8.0\LineChart.Blazor.Server.sourcelink.json

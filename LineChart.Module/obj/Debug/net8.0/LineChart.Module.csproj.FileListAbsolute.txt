@@ -22,3 +22,4 @@ C:\Users\Maxim\source\repos\LineChartReady\LineChart.Module\obj\Debug\net8.0\Lin
 C:\Users\Maxim\source\repos\LineChartReady\LineChart.Module\obj\Debug\net8.0\refint\LineChart.Module.dll
 C:\Users\Maxim\source\repos\LineChartReady\LineChart.Module\obj\Debug\net8.0\LineChart.Module.pdb
 C:\Users\Maxim\source\repos\LineChartReady\LineChart.Module\obj\Debug\net8.0\ref\LineChart.Module.dll
+C:\Users\Maxim\source\repos\LineChartReady\LineChart.Module\obj\Debug\net8.0\LineChart.Module.sourcelink.json

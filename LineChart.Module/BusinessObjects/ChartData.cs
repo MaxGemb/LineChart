@@ -13,18 +13,6 @@ namespace LineChart.Module.BusinessObjects
         {
             base.AfterConstruction();
         }
-        bool _isVisible;
-        public bool isVisible
-        {
-            get
-            {
-                return _isVisible;
-            }
-            set
-            {
-                SetPropertyValue(nameof(isVisible), ref _isVisible, value);
-            }
-        }
         string _name;
         public string name
         {

@@ -3,6 +3,9 @@
 @using LineChart.Module.Data
 @using System.Drawing
 @using DevExpress.Blazor
+@using static System.Net.Mime.MediaTypeNames
+
+
 <DxLayoutBreakpoint DeviceSize="DeviceSize.Large" />
 
 <DxStackLayout>
@@ -149,6 +152,10 @@
             if (ComponentModel.ClientsSource.ToList().Count > 0)
             {
                 clients = ComponentModel.ClientsSource.FirstOrDefault();
+                @foreach (var item in GetNames(clients.client))
+                {
+                    fragmentLines.Add(RenderLines(item));
+                }
             }
             if (ComponentModel.StrategistSource.ToList().Count > 0)
             {
@@ -162,27 +169,21 @@
             {
                 Currency = ComponentModel.CurrencySource.FirstOrDefault();
             }
+            if (ComponentModel.DatesSource.ToList().Count > 0)
+            {
+                dateBegin = GetDates().dateBegin;
+                dateEnd = GetDates().dateEnd;
+            }
+            else
+            {
+                dateBegin = DateTime.MinValue;
+                dateEnd = DateTime.Now;
+            }
+            chartDatas = ChartData();
         }
         catch (Exception ex)
         {
             throw (ex);
-        }
-
-        if (ComponentModel.DatesSource.ToList().Count > 0)
-        {
-            dateBegin = GetDates().dateBegin;
-            dateEnd = GetDates().dateEnd;
-        }
-        else
-        {
-            dateBegin = DateTime.MinValue;
-            dateEnd = DateTime.Now;
-        }
-        chartDatas = ChartData();
-
-        @foreach (var item in GetNames(clients.client))
-        {
-            fragmentLines.Add(RenderLines(item));
         }
     }
 
@@ -237,13 +238,16 @@
 
     private IEnumerable<ChartData> ChartData()
     {
-        if (clients.id == 0)
+        if (clients != null)
         {
-            chartDatas = ComponentModel.DataSource.Where(x => x.date >= dateBegin && x.date <= dateEnd).OrderBy(x => x.date);
-        }
-        else
-        {
-            chartDatas = ComponentModel.DataSource.Where(x => x.date >= dateBegin && x.date <= dateEnd && x.name == clients.client).OrderBy(x => x.date);
+            if (clients.id == 0)
+            {
+                chartDatas = ComponentModel.DataSource.Where(x => x.date >= dateBegin && x.date <= dateEnd).OrderBy(x => x.date);
+            }
+            else
+            {
+                chartDatas = ComponentModel.DataSource.Where(x => x.date >= dateBegin && x.date <= dateEnd && x.name == clients.client).OrderBy(x => x.date);
+            }
         }
         return chartDatas;
     }
